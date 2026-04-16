@@ -1,0 +1,11 @@
+C:\workspace\ch347t\CH347T_Sharp\bin\Debug\net8.0\CH347T_Sharp.deps.json
+C:\workspace\ch347t\CH347T_Sharp\bin\Debug\net8.0\CH347T_Sharp.dll
+C:\workspace\ch347t\CH347T_Sharp\bin\Debug\net8.0\CH347T_Sharp.pdb
+C:\workspace\ch347t\CH347T_Sharp\obj\Debug\net8.0\CH347T_Sharp.GeneratedMSBuildEditorConfig.editorconfig
+C:\workspace\ch347t\CH347T_Sharp\obj\Debug\net8.0\CH347T_Sharp.AssemblyInfoInputs.cache
+C:\workspace\ch347t\CH347T_Sharp\obj\Debug\net8.0\CH347T_Sharp.AssemblyInfo.cs
+C:\workspace\ch347t\CH347T_Sharp\obj\Debug\net8.0\CH347T_Sharp.csproj.CoreCompileInputs.cache
+C:\workspace\ch347t\CH347T_Sharp\obj\Debug\net8.0\CH347T_Sharp.dll
+C:\workspace\ch347t\CH347T_Sharp\obj\Debug\net8.0\refint\CH347T_Sharp.dll
+C:\workspace\ch347t\CH347T_Sharp\obj\Debug\net8.0\CH347T_Sharp.pdb
+C:\workspace\ch347t\CH347T_Sharp\obj\Debug\net8.0\ref\CH347T_Sharp.dll

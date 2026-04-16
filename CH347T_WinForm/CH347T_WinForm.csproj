@@ -1,0 +1,20 @@
+<Project Sdk="Microsoft.NET.Sdk">
+
+  <PropertyGroup>
+    <OutputType>WinExe</OutputType>
+    <TargetFramework>net8.0-windows</TargetFramework>
+    <Nullable>enable</Nullable>
+    <UseWindowsForms>true</UseWindowsForms>
+    <ImplicitUsings>enable</ImplicitUsings>
+    <Platforms>AnyCPU;x64</Platforms>
+  </PropertyGroup>
+
+  <ItemGroup>
+    <ProjectReference Include="..\CH347T_Sharp\CH347T_Sharp.csproj" />
+  </ItemGroup>
+
+  <Target Name="CopyCH347DLL" AfterTargets="Build">
+    <Copy SourceFiles="..\CH341PAR\CH347DLLA64.DLL" DestinationFiles="$(OutputPath)CH347DLL.DLL" Condition="Exists('..\CH341PAR\CH347DLLA64.DLL')" />
+  </Target>
+
+</Project>
