@@ -70,6 +70,16 @@ namespace CH347T_Sharp
             return null;
         }
 
+        public bool I2CWriteAndCheckAck(byte[] writeBuffer)
+        {
+            uint ackCount = 0;
+            // For a simple address probe, readLength is 0 and oReadBuffer can be an empty array.
+            // We are only interested in the ACK count for the write operation.
+            bool success = NativeMethods.CH347StreamI2C_RetACK(Index, (uint)writeBuffer.Length, writeBuffer, 0, new byte[0], out ackCount);
+            // For an I2C address probe (single byte write), if ackCount is 1, it means the device ACKed the address.
+            return success && ackCount == writeBuffer.Length;
+        }
+
         // SMBus Helper Methods
         public bool SMBusWriteByte(byte addr, byte cmd, byte data)
         {

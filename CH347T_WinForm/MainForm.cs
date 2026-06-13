@@ -236,7 +236,7 @@ namespace CH347T_WinForm
                 int count = 0;
                 for (byte i = 0x08; i <= 0x77; i++) {
                     if (device == null) break;
-                    if (device.I2CStream(new byte[] { (byte)(i << 1) }, 0) != null) {
+                    if (device.I2CWriteAndCheckAck(new byte[] { (byte)(i << 1) })) {
                         Log($">> Device detected at 0x{i:X2}");
                         count++;
                     }

@@ -64,6 +64,9 @@ namespace CH347T_Sharp
         [DllImport(DLL_NAME, CallingConvention = CallingConvention.StdCall)]
         public static extern bool CH347StreamI2C(uint iIndex, uint iWriteLength, byte[] iWriteBuffer, uint iReadLength, byte[] oReadBuffer);
 
+        [DllImport(DLL_NAME, CallingConvention = CallingConvention.StdCall)]
+        public static extern bool CH347StreamI2C_RetACK(uint iIndex, uint iWriteLength, byte[] iWriteBuffer, uint iReadLength, byte[] oReadBuffer, out uint rAckCount);
+
         // GPIO
         [DllImport(DLL_NAME, CallingConvention = CallingConvention.StdCall)]
         public static extern bool CH347GPIO_Get(uint iIndex, out byte iDir, out byte iData);
